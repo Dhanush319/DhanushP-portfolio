@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanush | Projects</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+    <h2>Dhanush <span>P</span></h2>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="education.html">EDUCATION</a></li>
+        <li><a href="projects.html"class="active">PROJECTS</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<section class="page">
+    <h1>Projects</h1>
+
+    <!-- PROJECT 1 -->
+    <a href="https://github.com/Dhanush319/Employee-Attendance-Tracker.git"
+       target="_blank" style="text-decoration:none;color:inherit;">
+
+        <div class="project-card">
+            <h3>Employee Attendance Tracker</h3>
+            <p>Java | JDBC | MySQL</p>
+
+            <div class="project-details">
+                • Developed a Java-based Employee Attendance Tracker using Java, JDBC, and MySQL.<br>
+                • Implemented CRUD operations for managing employee records and attendance data.<br>
+                • Designed SQL queries for attendance reporting and data retrieval.<br>
+                • Improved understanding of backend development and database management.
+            </div>
+        </div>
+    </a>
+
+    <!-- PROJECT 2 -->
+    <a href="https://github.com/Dhanush319/Smart-solution-for-electrical-product-retail.git"
+       target="_blank" style="text-decoration:none;color:inherit;">
+
+        <div class="project-card">
+            <h3>Smart Solution for Electrical Product Retail</h3>
+            <p>Web Application | Inventory Management</p>
+
+            <div class="project-details">
+                • Developed a web-based solution for managing electrical product inventory and sales.<br>
+                • Implemented real-time inventory tracking with a user-friendly interface.<br>
+                • Enhanced customer interaction through organized product data management.
+            </div>
+        </div>
+    </a>
+
+</section>
+<script>
+    const links = document.querySelectorAll("a");
+
+    links.forEach(link => {
+        link.addEventListener("click", e => {
+            if (link.target === "_blank") return;
+
+            e.preventDefault();
+            const href = link.href;
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = href;
+            }, 400);
+        });
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanush | Contact</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+    <h2>Dhanush <span>P</span></h2>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="education.html">EDUCATION</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="contact.html"class="active">CONTACT</a></li>
+    </ul>
+</nav>
+
+<section class="page">
+    <h1>Contact Me</h1>
+
+    <div class="contact-card">
+        <p><strong>Email:</strong> dhanush2k399@gmail.com</p>
+        <p><strong>Phone:</strong> 7904945026</p>
+        <p><strong>Location:</strong> Tamil Nadu, India</p>
+        <p><strong>GitHub: </strong>
+            <a href="https://github.com/Dhanush319" target="_blank" style="color: rgb(232, 169, 76);">
+                github.com/Dhanush319
+            </a>
+        </p>
+        <p><strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/dhanush-p"target="_blank"style="color: rgb(232, 169, 76);">
+                linkedin.com/in/dhanush-p
+            </a>
+        </p>
+    </div>
+</section>
+<script>
+    const links = document.querySelectorAll("a");
+
+    links.forEach(link => {
+        link.addEventListener("click", e => {
+            if (link.target === "_blank") return;
+
+            e.preventDefault();
+            const href = link.href;
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = href;
+            }, 400);
+        });
+    });
+</script>
+
+
+</body>
+</html>

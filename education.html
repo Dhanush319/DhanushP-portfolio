@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanush | Education</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+    <h2>Dhanush <span>P</span></h2>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="education.html"class="active">EDUCATION</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<section class="page">
+    <h1>Education</h1>
+
+    <div class="card">
+        <h3><B>B.Tech Artificial Intelligence and Data Science</B></h3>
+        <p>
+            Nandha Engineering College (Autonomous), Erode<br>
+            <strong>2021 – 2025</strong><br>
+            <strong> CGPA:7.9</strong>
+        </p>
+    </div>
+
+    <div class="card">
+        <h3><B>HSC</B></h3>
+        <p>
+            MRS Matric Higher Secondary School, Gobichettipalayam<br>
+            <strong>2020-2021</strong><br>
+           <strong>Percentage:85%</strong>
+        </p>
+    </div>
+     
+    <div class="card">
+        <h3><B>SSLC</B></h3>
+        <p>
+            MRS Matric Higher Secondary School, Gobichettipalayam<br>
+            <strong>2018-2019</strong><br><br>
+             <strong> Percentage:78%</strong>
+        </p>
+    </div>
+    <h1>Courses</h1>
+
+    <div class="card">
+        <p>
+            • Java Full Stack – Q Spiders<br>
+            • Introduction to Database and SQL – Scaler
+        </p>
+    </div>
+
+    <h1>Achievements & Activities</h1>
+
+    <div class="card">
+        <p>
+            • Best Project Award – Innovation Day, Nandha Engineering College<br>
+            • 1st Prize in Photography – Thiruchengode Sengunthar College<br>
+            • Led and organized “Pac Battle” event during college symposium<br>
+            • Coordinated Multiple events during Innovation Day at college
+        </p>
+    </div>
+</section>
+<script>
+    const links = document.querySelectorAll("a");
+
+    links.forEach(link => {
+        link.addEventListener("click", e => {
+            if (link.target === "_blank") return;
+
+            e.preventDefault();
+            const href = link.href;
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = href;
+            }, 400);
+        });
+    });
+</script>
+
+
+</body>
+</html>
